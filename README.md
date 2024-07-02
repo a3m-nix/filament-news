@@ -1,17 +1,15 @@
-# Filament Demo App
+# Filament Demo News App
 
 A demo application to illustrate how Filament Admin works.
 
-![Filament Demo](https://github.com/filamentphp/demo/assets/171715/899161a9-3c85-4dc9-9599-13928d3a4412)
-
-[Open in Gitpod](https://gitpod.io/#https://github.com/filamentphp/demo) to edit it and preview your changes with no setup required.
+Code from https://github.com/filamentphp/demo
 
 ## Installation
 
 Clone the repo locally:
 
 ```sh
-git clone https://github.com/laravel-filament/demo.git filament-demo && cd filament-demo
+git clone https://github.com/a3m-nix/filament-news.git filament-demo-news && cd filament-demo-news
 ```
 
 Install PHP dependencies:
@@ -54,7 +52,6 @@ php artisan db:seed
 > If you get an "Invalid datetime format (1292)" error, this is probably related to the timezone setting of your database.  
 > Please see https://dba.stackexchange.com/questions/234270/incorrect-datetime-value-mysql
 
-
 Create a symlink to the storage:
 
 ```sh
@@ -77,26 +74,33 @@ You're ready to go! Visit the url in your browser, and login with:
 ### Relations
 
 #### BelongsTo
-- ProductResource
-- OrderResource
-- PostResource
+
+-   ProductResource
+-   OrderResource
+-   PostResource
 
 #### BelongsToMany
-- CategoryResource\RelationManagers\ProductsRelationManager
+
+-   CategoryResource\RelationManagers\ProductsRelationManager
 
 #### HasMany
-- OrderResource\RelationManagers\PaymentsRelationManager
+
+-   OrderResource\RelationManagers\PaymentsRelationManager
 
 #### HasManyThrough
-- CustomerResource\RelationManagers\PaymentsRelationManager
+
+-   CustomerResource\RelationManagers\PaymentsRelationManager
 
 #### MorphOne
-- OrderResource -> Address
+
+-   OrderResource -> Address
 
 #### MorphMany
-- ProductResource\RelationManagers\CommentsRelationManager
-- PostResource\RelationManagers\CommentsRelationManager
+
+-   ProductResource\RelationManagers\CommentsRelationManager
+-   PostResource\RelationManagers\CommentsRelationManager
 
 #### MorphToMany
-- BrandResource\RelationManagers\AddressRelationManager
-- CustomerResource\RelationManagers\AddressRelationManager
+
+-   BrandResource\RelationManagers\AddressRelationManager
+-   CustomerResource\RelationManagers\AddressRelationManager
