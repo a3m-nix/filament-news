@@ -1,4 +1,4 @@
-# Filament Demo News App
+# Filament News App with Api
 
 Filament News App with Api
 
