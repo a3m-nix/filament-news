@@ -1,6 +1,6 @@
 # Filament Demo News App
 
-A demo application to illustrate how Filament Admin works.
+Filament News App with Api
 
 Code from https://github.com/filamentphp/demo
 
