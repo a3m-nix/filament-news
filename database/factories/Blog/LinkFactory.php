@@ -23,16 +23,8 @@ class LinkFactory extends Factory
     {
         return [
             'url' => $this->faker->url(),
-            'title' => [
-                'en' => Str::title($this->faker->words(asText: true)),
-                'es' => Str::title($this->faker->words(asText: true)),
-                'nl' => Str::title($this->faker->words(asText: true)),
-            ],
-            'description' => [
-                'en' => $this->faker->sentence(),
-                'es' => $this->faker->sentence(),
-                'nl' => $this->faker->sentence(),
-            ],
+            'title' => Str::title($this->faker->words(asText: true)),
+            'description' => $this->faker->sentence(),
             'color' => $this->faker->hexColor(),
             'image' => $this->createImage(LocalImages::SIZE_1280x720),
         ];

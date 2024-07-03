@@ -8,7 +8,7 @@ use Filament\Resources\Pages\ViewRecord;
 
 class ViewLink extends ViewRecord
 {
-    use ViewRecord\Concerns\Translatable;
+    // use ViewRecord\Concerns\Translatable;
 
     protected static string $resource = LinkResource::class;
 
@@ -16,7 +16,7 @@ class ViewLink extends ViewRecord
     {
         return [
             Actions\EditAction::make(),
-            Actions\LocaleSwitcher::make(),
+            //   Actions\LocaleSwitcher::make(),
         ];
     }
 }

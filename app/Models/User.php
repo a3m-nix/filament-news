@@ -19,6 +19,7 @@ class User extends Authenticatable implements FilamentUser, HasTenants, MustVeri
     use HasFactory;
     use Notifiable;
 
+
     /**
      * @var array<int, string>
      */
