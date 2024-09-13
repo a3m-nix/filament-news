@@ -31,7 +31,7 @@ class Post extends Model
     protected function imageUrl(): Attribute
     {
         return new Attribute(
-            get: fn () => $this->image ? asset('storage/' . $this->image) : null,
+            get: fn() => $this->image ? asset('storage/' . $this->image) : null,
         );
     }
 
@@ -51,5 +51,21 @@ class Post extends Model
     public function comments(): MorphMany
     {
         return $this->morphMany(Comment::class, 'commentable');
+    }
+
+    public function getAllowedFields(): array
+    {
+        return ['blog_category_id'];
+    }
+
+    public function getAllowedSorts(): array
+    {
+        return [];
+    }
+
+    // Which fields can be used to filter the results through the query string
+    public function getAllowedFilters(): array
+    {
+        return ['blog_category_id'];
     }
 }

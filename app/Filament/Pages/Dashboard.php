@@ -17,7 +17,7 @@ class Dashboard extends BaseDashboard
     {
         return $form
             ->schema([
-                Section::make()
+                /* Section::make()
                     ->schema([
                         Select::make('businessCustomersOnly')
                             ->boolean(),
@@ -27,7 +27,6 @@ class Dashboard extends BaseDashboard
                             ->minDate(fn (Get $get) => $get('startDate') ?: now())
                             ->maxDate(now()),
                     ])
-                    ->columns(3),
-            ]);
+                    ->columns(3), */]);
     }
 }

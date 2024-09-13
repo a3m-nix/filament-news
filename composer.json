@@ -20,6 +20,7 @@
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.8",
         "rupadana/filament-api-service": "^3.2",
+        "spatie/laravel-query-builder": "*",
         "squirephp/countries-en": "^3.3",
         "squirephp/currencies-en": "^3.3"
     },

@@ -1,0 +1,31 @@
+Get All
+http://localhost:8000/api/v1/posts
+{
+"data":[
+            {
+                "id": 1,
+                "blog_author_id": 1,
+                "blog_category_id": 235,
+                "title": "Et non totam sint culpa aut.",
+                "slug": "et-non-totam-sint-culpa-aut",
+                "content": "Dinah my dear! I shall only look up and down, and lvet cushion; and, last of all the other bit. Her chin was.",
+                "published_at": "2024-06-07T00:00:00.000000Z",
+                "seo_title": null,
+                "seo_description": null,
+                "image": "5a0eafad-c22e-4bb6-b739-1663ccafcb97.jpg",
+                "created_at": "2023-11-07T23:45:59.000000Z",
+                "updated_at": "2024-04-09T11:42:24.000000Z",
+                "image_url": "http://localhost:8000/storage/5a0eafad-c22e-4bb6-b739-1663ccafcb97.jpg"
+            },
+            {
+            "id": 2,
+            ....
+            }
+        ]
+}
+
+Limit Per Page
+http://localhost:8000/api/v1/posts?per_page=2
+
+Filter 
+http://localhost:8000/api/v1/posts?filters[blog_category_id]=235
